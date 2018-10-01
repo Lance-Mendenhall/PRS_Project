@@ -1,0 +1,11 @@
+package com.prs.business.user;
+
+import org.springframework.data.repository.CrudRepository;
+
+public class UserRepository {
+	
+	public interface UserRepository extends CrudRepository<User, Integer>{
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.prs.web;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+@RequestMapping("/Users")
+public class UserController {
+	
+	
+
+}

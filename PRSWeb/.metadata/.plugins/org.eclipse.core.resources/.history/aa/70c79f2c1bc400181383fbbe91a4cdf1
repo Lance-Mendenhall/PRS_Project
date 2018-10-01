@@ -1,0 +1,12 @@
+package com.prs.business.vendor;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Vendor {
+	
+	
+	
+	
+
+}
