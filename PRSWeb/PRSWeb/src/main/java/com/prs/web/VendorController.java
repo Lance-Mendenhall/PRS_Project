@@ -51,7 +51,7 @@ public class VendorController {
 	public @ResponseBody String removeVendor(@RequestBody Vendor vendor) {
 		
 		vendorRepository.delete(vendor);
-		return "user deleted";
+		return "vendor deleted";
 	}
 
 }
