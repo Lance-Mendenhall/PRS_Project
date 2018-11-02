@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { UserService } from '../user.service';
-import { User } from '../user.class';
+import { VendorService } from '../vendor.service';
+import { Vendor } from '../vendor.class';
 
 @Component({
-  selector: 'app-user-detail',
-  templateUrl: './user-detail.component.html',
-  styleUrls: ['./user-detail.component.css']
+  selector: 'app-vendor-detail',
+  templateUrl: './vendor-detail.component.html',
+  styleUrls: ['./vendor-detail.component.css']
 })
-export class UserDetailComponent implements OnInit {
+export class VendorDetailComponent implements OnInit {
 
-user:User; 
- 
+  vendor:Vendor; 
+
 delete(): void {
-  this.usersvc.remove(this.user)
+  this.vendorsvc.remove(this.vendor)
   .subscribe(resp=> {
 console.log("resp",resp);
-this.router.navigateByUrl('/users/list');
+this.router.navigateByUrl('/vendors/list');
   }); 
 }
 
   constructor(
-    private usersvc: UserService, 
+    private vendorsvc: VendorService, 
     private route: ActivatedRoute,
     private router: Router) { 
   }
@@ -30,11 +30,11 @@ this.router.navigateByUrl('/users/list');
     // gets the :id from the router
     let id = this.route.snapshot.params.id;
     // get the user from the user service
-    this.usersvc.get(id)
+    this.vendorsvc.get(id)
     .subscribe(resp=> {
       console.log("resp: ", resp);
-      this.user = resp.data;
+      this.vendor = resp.data;
     });
   }
-
+ 
 }

@@ -1,0 +1,36 @@
+<div>
+  <div>
+    <span>Product List</span>
+    | <a routerLink='/products/create'>Create New</a>
+  </div>
+  <table class="table table-sm" *ngIf="products">
+<thead>
+  <tr>
+    <td>Id</td>
+    <td>Partnumber</td>
+    <td>Name</td>
+    <td>Price</td>
+    <td>Unit</td>
+    <td>Photo</td>
+    <td>Vendor</td>
+   
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor='let product of products | sortProducts'>
+    <td> {{ product.id }}</td>
+    <td> {{ product.partNumber }}</td>
+    <td>{{ product.name }} </td>
+    <td>{{ product.price }}</td>
+    <td>{{ product.Unit }}</td>
+    <td>{{ product.photoPath }}</td>
+    <td>{{ product.vendor.name}}</td>
+   
+    <td>
+      <a routerLink='/products/detail/{{product.id}}'>Detail</a>
+      | <a routerLink='/products/edit/{{product.id}}'>Edit</a>
+    </td>
+  </tr>
+</tbody>
+  </table>
+</div> 

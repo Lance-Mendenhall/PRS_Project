@@ -20,5 +20,5 @@ export class UserListComponent implements OnInit {
         this.users = resp.data;
       });
   }
-
-}
+ 
+} 

@@ -17,10 +17,10 @@ export class UserEditComponent implements OnInit {
     this.usersvc.change(this.user)
     .subscribe(resp=> {
      console.log("resp",resp);
-     this.router.navigateByUrl('/Users/List');
+     this.router.navigateByUrl('/users/list');
     });
   }
-
+  
   constructor(
     private usersvc: UserService,
     private route:ActivatedRoute,

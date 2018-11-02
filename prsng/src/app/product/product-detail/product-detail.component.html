@@ -1,0 +1,20 @@
+<div>
+  <div>
+    <span>Product detail</span>
+  <p *ngIf='!user'>Retrieving data...this may take a while...</p>
+  <table class="table table-sm" *ngIf="user">
+<tr><td>Id:</td><td>{{ product.id }}</td></tr>
+<tr><td>Name:</td><td>{{ product.name }}</td></tr>
+<tr><td>Part Number:</td><td>{{ product.partNumber }}</td></tr>
+<tr><td>Price</td><td>{{ product.price }}</td></tr>
+<tr><td>Unit</td><td>{{ product.unit }}</td></tr>
+<tr><td>Vendor:</td><td>{{ product.vendor.id }}</td></tr>
+ 
+  </table>
+  <div>
+    <button class="btn btn-danger" (click)="delete()">Delete</button>
+  </div>
+</div>
+</div>
+
+
