@@ -1,15 +1,15 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { User } from '../user/user.class';
+import { Prli } from '../prli/prli.class';
 
 @Pipe({
-  name: 'sortUsers'
+  name: 'sortPrlis'
 })
-export class SortUserPipe implements PipeTransform {
+export class SortPrliPipe implements PipeTransform {
 
-  transform(users: User[]): User[] {
+  transform(prlis: Prli[]): Prli[] {
     
-    let sortColumn = "lastName";
-    return users.sort(compareFunction);
+    let sortColumn = "id";
+    return prlis.sort(compareFunction);
 
     function compareFunction(a,b) {
       let x=(a[sortColumn]).toUpperCase();

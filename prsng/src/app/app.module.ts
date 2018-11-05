@@ -20,11 +20,23 @@ import { VendorCreateComponent } from './vendor/vendor-create/vendor-create.comp
 import { BoolDisplayPipe } from './pipes/bool-display.pipe';
 import { SortUserPipe } from './pipes/sort-user.pipe';
 import { SortProductPipe } from './pipes/sort-product.pipe';
+import { SortPurchaserequestPipe } from './pipes/sort-purchaserequest.pipe';
+import { SortPrliPipe } from './pipes/sort-prli.pipe';
 
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductEditComponent } from './product/product-edit/product-edit.component';
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
+
+import { PurchaserequestListComponent } from './purchaserequest/purchaserequest-list/purchaserequest-list.component';
+import { PurchaserequestDetailComponent } from './purchaserequest/purchaserequest-detail/purchaserequest-detail.component';
+import { PurchaserequestCreateComponent } from './purchaserequest/purchaserequest-create/purchaserequest-create.component';
+import { PurchaserequestEditComponent } from './purchaserequest/purchaserequest-edit/purchaserequest-edit.component';
+
+import { PrliListComponent } from './prli/prli-list/prli-list.component';
+import { PrliDetailComponent } from './prli/prli-detail/prli-detail.component';
+import { PrliCreateComponent } from './prli/prli-create/prli-create.component';
+import { PrliEditComponent } from './prli/prli-edit/prli-edit.component';
 
 @NgModule({
   declarations: [
@@ -44,10 +56,21 @@ import { ProductDetailComponent } from './product/product-detail/product-detail.
     BoolDisplayPipe,
     SortUserPipe,
     SortProductPipe,
+    SortPurchaserequestPipe,
+    SortPrliPipe,
     ProductListComponent,
     ProductEditComponent,
     ProductCreateComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    
+    PurchaserequestListComponent,
+    PurchaserequestDetailComponent,
+    PurchaserequestCreateComponent,
+    PurchaserequestEditComponent,
+    PrliListComponent,
+    PrliDetailComponent,
+    PrliCreateComponent,
+    PrliEditComponent
   ],
   imports: [
     BrowserModule,

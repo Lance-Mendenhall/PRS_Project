@@ -16,6 +16,16 @@ import { ProductDetailComponent } from './product/product-detail/product-detail.
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import { ProductEditComponent } from './product/product-edit/product-edit.component';
 
+import { PurchaserequestListComponent } from './purchaserequest/purchaserequest-list/purchaserequest-list.component';
+import { PurchaserequestDetailComponent } from './purchaserequest/purchaserequest-detail/purchaserequest-detail.component';
+import { PurchaserequestCreateComponent } from './purchaserequest/purchaserequest-create/purchaserequest-create.component';
+import { PurchaserequestEditComponent } from './purchaserequest/purchaserequest-edit/purchaserequest-edit.component';
+
+import { PrliListComponent } from './prli/prli-list/prli-list.component';
+import { PrliDetailComponent } from './prli/prli-detail/prli-detail.component';
+import { PrliCreateComponent } from './prli/prli-create/prli-create.component';
+import { PrliEditComponent } from './prli/prli-edit/prli-edit.component';
+
 import { MenuComponent } from './menu/menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -38,6 +48,16 @@ const routes: Routes = [
   { path: 'products/detail/:id', component: ProductDetailComponent},
   { path: 'products/create', component: ProductCreateComponent},
   { path: 'products/edit/:id', component: ProductEditComponent},
+
+  { path: 'purchaserequests/list', component: ProductListComponent},
+  { path: 'purchaserequests/detail/:id', component: ProductDetailComponent},
+  { path: 'purchaserequests/create', component: ProductCreateComponent},
+  { path: 'purchaserequests/edit/:id', component: ProductEditComponent},
+
+  { path: 'prli/list', component: PrliListComponent},
+  { path: 'prli/detail/:id', component: PrliDetailComponent},
+  { path: 'prli/create', component: PrliCreateComponent},
+  { path: 'prli/edit/:id', component: PrliEditComponent},
 
   { path: 'home', component: HomeComponent},
   { path: 'about', component: AboutComponent},

@@ -1,0 +1,26 @@
+<div>
+  <div>
+    <span>PRLI List</span>
+    | <a routerLink='/prli/create'>Create New</a>
+  </div>
+  <table class="table table-sm" *ngIf="prlis">
+<thead>
+  <tr>
+    <td>Id</td>
+    <td>Product</td>
+    <td>Quantity</td>
+   </tr>
+</thead>
+<tbody>
+  <tr *ngFor='let prli of prlis | sortPrlis'>
+    <td>{{ prli.id }}</td>
+    <td>{{ prli.product.name }} </td>
+    <td>{{ prli.quantity }}</td>
+    <td>
+      <a routerLink='/prlis/detail/{{prli.id}}'>Detail</a>
+      | <a routerLink='/prlis/edit/{{prli.id}}'>Edit</a>
+    </td>
+  </tr>
+</tbody>
+  </table>
+</div> 

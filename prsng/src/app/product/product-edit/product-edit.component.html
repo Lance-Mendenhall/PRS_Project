@@ -1,6 +1,6 @@
 <div class="component">
   <div>
-    <span class="page-title">User Create</span>
+    <span class="page-title">Product Create</span>
   </div>
 
  
@@ -71,7 +71,7 @@
       <label class="col-form-label col-sm-2">Vendor:</label>
       <div class="col-sm-8">
         <select [(ngModel)]="product.VendorID" class="form-control" name="vendorId">
-          <option *ngFor="let vendor of vendors" [ngValue]="vendor.Id">{{ vendor.Name }}</option>
+          <option *ngFor="let vendor of vendors" [ngValue]="vendor.id">{{ vendor.name }}</option>
         </select>
       </div>
     </div>

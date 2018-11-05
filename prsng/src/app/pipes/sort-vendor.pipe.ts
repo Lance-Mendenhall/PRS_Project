@@ -1,15 +1,15 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { User } from '../user/user.class';
+import { Vendor } from '../vendor/vendor.class';
 
 @Pipe({
-  name: 'sortUsers'
+  name: 'sortVendors'
 })
-export class SortUserPipe implements PipeTransform {
+export class SortVendorsPipe implements PipeTransform {
 
-  transform(users: User[]): User[] {
+  transform(vendors: Vendor[]): Vendor[] {
     
-    let sortColumn = "lastName";
-    return users.sort(compareFunction);
+    let sortColumn = "name";
+    return vendors.sort(compareFunction);
 
     function compareFunction(a,b) {
       let x=(a[sortColumn]).toUpperCase();
@@ -20,5 +20,5 @@ export class SortUserPipe implements PipeTransform {
       else return 1;
     }
   }
- 
+
 }

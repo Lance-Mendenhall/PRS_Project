@@ -20,5 +20,5 @@ export class ProductListComponent implements OnInit {
         this.products = resp.data;
       });
   }
- 
+  
 } 

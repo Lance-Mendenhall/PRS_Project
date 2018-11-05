@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <span>PRLI detail</span>
+  <p *ngIf='!prli'>Retrieving data...this may take a while...</p>
+  <table class="table table-sm" *ngIf="prli">
+<tr><td>Id:</td><td>{{ prli.id }}</td></tr>
+<tr><td>Name:</td><td>{{ prli.product.name }}</td></tr>
+<tr><td>Quantity:</td><td>{{ prli.quantity }}</td></tr>
+<tr><td>Price</td><td>{{ prli.product.price }}</td></tr>
+  
+  </table>
+  <div>
+    <button class="btn btn-danger" (click)="delete()">Delete</button>
+  </div>
+</div>
+</div>
+
