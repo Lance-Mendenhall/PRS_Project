@@ -18,7 +18,7 @@ constructor() {
     this.deliverymode="Pickup";
     this.datesubmitted=(new Date()).toLocaleDateString();
     this.status="New";
-
+    this.reasonforrejection = " ";
     }
 }
 

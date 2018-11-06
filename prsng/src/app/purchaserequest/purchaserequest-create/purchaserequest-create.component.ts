@@ -16,6 +16,7 @@ export class PurchaserequestCreateComponent implements OnInit {
   users: User[];
 
   save():void {
+    console.log("PR Add:", this.purchaserequest);
     this.purchaserequestsvc.add(this.purchaserequest)
     .subscribe(resp=> {
      console.log("resp",resp);
@@ -34,6 +35,10 @@ export class PurchaserequestCreateComponent implements OnInit {
     .subscribe(resp => {
       console.log("Users:", resp);
       this.users = resp.data;
+      if(this.users.length > 0) {
+        let user = this.users[0];
+        this.purchaserequest.user = user;
+      }
     });
   }
  

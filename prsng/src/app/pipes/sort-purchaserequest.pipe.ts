@@ -12,12 +12,13 @@ export class SortPurchaserequestPipe implements PipeTransform {
     return purchaserequests.sort(compareFunction);
 
     function compareFunction(a,b) {
-      let x=(a[sortColumn]).toUpperCase();
-      let y=(b[sortColumn]).toUpperCase();
+      // let x=(a[sortColumn]).toUpperCase();
+      // let y=(b[sortColumn]).toUpperCase();
 
-      if(x === y) return 0;
-      if(x < y) return -1;
-      else return 1;
+      // if(x === y) return 0;
+      // if(x < y) return -1;
+      // else return 1;
+      return 0;
     }
   }
  

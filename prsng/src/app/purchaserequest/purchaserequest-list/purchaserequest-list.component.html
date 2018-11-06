@@ -1,6 +1,6 @@
 <div>
   <div>
-    <span>Product List</span>
+    <span>Purchase Request List</span>
     | <a routerLink='/purchaserequests/create'>Create New</a>
   </div>
   <table class="table table-sm" *ngIf="purchaserequests">
@@ -14,7 +14,7 @@
     <td>Date Submitted</td>
     <td>Status</td>
     <td>Reason for Rejection</td>
-    
+        
   </tr>
 </thead>
 <tbody>
@@ -27,7 +27,7 @@
     <td>{{ purchaserequest.submittedDate }}</td>
     <td>{{ purchaserequest.status }}</td>
     <td>{{ purchaserequest.reasonForRejection }}</td>
-   
+     
     <td>
       <a routerLink='/purchaserequests/detail/{{purchaserequest.id}}'>Detail</a>
       | <a routerLink='/purchaserequests/edit/{{purchaserequest.id}}'>Edit</a>

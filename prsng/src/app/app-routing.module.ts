@@ -49,10 +49,10 @@ const routes: Routes = [
   { path: 'products/create', component: ProductCreateComponent},
   { path: 'products/edit/:id', component: ProductEditComponent},
 
-  { path: 'purchaserequests/list', component: ProductListComponent},
-  { path: 'purchaserequests/detail/:id', component: ProductDetailComponent},
-  { path: 'purchaserequests/create', component: ProductCreateComponent},
-  { path: 'purchaserequests/edit/:id', component: ProductEditComponent},
+  { path: 'purchaserequests/list', component: PurchaserequestListComponent},
+  { path: 'purchaserequests/detail/:id', component: PurchaserequestDetailComponent},
+  { path: 'purchaserequests/create', component: PurchaserequestCreateComponent},
+  { path: 'purchaserequests/edit/:id', component: PurchaserequestEditComponent},
 
   { path: 'prli/list', component: PrliListComponent},
   { path: 'prli/detail/:id', component: PrliDetailComponent},
