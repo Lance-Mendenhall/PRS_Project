@@ -24,6 +24,7 @@ public class Product {
 		private double price;
 		private String Unit;
 		private String photoPath;
+		//private int vendorid;
 		
 		public Product(int id, Vendor vendor, String partNumber, String name, double price, String unit, String photoPath) {
 			super();
@@ -35,6 +36,7 @@ public class Product {
 			this.price = price;
 			Unit = unit;
 			this.photoPath = photoPath;
+			//vendorid=vendor.getId();
 		}
 
 		

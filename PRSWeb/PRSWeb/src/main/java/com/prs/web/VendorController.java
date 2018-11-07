@@ -58,21 +58,6 @@ public class VendorController {
 		return saveVendor(vendor);
 	}
 	
-//	@PostMapping("/Login")
-//	public @ResponseBody JsonResponse authenticate(@RequestBody Vendor vendor) {
-//		
-//		try {
-//			Vendor v = vendorRepository.findByuserNameAndPassword(vendor.getVendorName(),
-//					vendor.getPassword());
-//			return JsonResponse.getInstance(u);
-//		}
-//		catch(Exception e) {
-//			return JsonResponse.getErrorInstance("Error authenticating vendor.",e);
-//		}
-//		
-//		// return vendorRepository.save(user);
-//	}
-	
 	@PostMapping("/Change")
 	public @ResponseBody JsonResponse updateVendor(@RequestBody Vendor vendor) {
 		return saveVendor(vendor);

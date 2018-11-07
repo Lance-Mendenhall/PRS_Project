@@ -68,7 +68,6 @@ public class UserController {
 			return JsonResponse.getErrorInstance("Error authenticating user.",e);
 		}
 		
-		// return userRepository.save(user);
 	}
 	
 	@PostMapping("/Change")

@@ -56,20 +56,6 @@ public class ProductController {
 		return saveProduct(product);
 	}
 	
-//	@PostMapping("/Login")
-//	public @ResponseBody JsonResponse authenticate(@RequestBody Product product) {
-//		
-//		try {
-//			Product p = productRepository.findByuserNameAndPassword(product.getUserName(),
-//					product.getPassword());
-//			return JsonResponse.getInstance(u);
-//		}
-//		catch(Exception e) {
-//			return JsonResponse.getErrorInstance("Error authenticating product.",e);
-//		}
-//		
-//		// return productRepository.save(product);
-//	}
 	
 	@PostMapping("/Change")
 	public @ResponseBody JsonResponse updateUser(@RequestBody Product product) {

@@ -58,20 +58,6 @@ public class PurchaseRequestLineItemController {
 		return savePurchaseRequestLineItem(purchaseRequestLineItem);
 	}
 	
-//	@PostMapping("/Login")
-//	public @ResponseBody JsonResponse authenticate(@RequestBody User user) {
-//		
-//		try {
-//			User u = userRepository.findByuserNameAndPassword(user.getUserName(),
-//					user.getPassword());
-//			return JsonResponse.getInstance(u);
-//		}
-//		catch(Exception e) {
-//			return JsonResponse.getErrorInstance("Error authenticating user.",e);
-//		}
-//		
-//		// return userRepository.save(user);
-//	}
 	
 	@PostMapping("/Change")
 	public @ResponseBody JsonResponse updatePurchaseRequestLineItem(@RequestBody PurchaseRequestLineItem purchaseRequestLineItem) {

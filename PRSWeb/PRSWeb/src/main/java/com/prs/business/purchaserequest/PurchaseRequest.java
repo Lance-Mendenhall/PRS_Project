@@ -26,8 +26,9 @@ public class PurchaseRequest {
 	private String DeliveryMode;
 	private int total;
 	private LocalDateTime submittedDate;
-	private String reasonForRejection;
+	private String reasonForRejection = " ";
 	private String status;
+	
 	
 	public PurchaseRequest(int iD, User user, LocalDateTime dateNeeded, String deliveryMode, int total,
 			LocalDateTime submittedDate, String reasonForRejection, String status) {
@@ -39,19 +40,23 @@ public class PurchaseRequest {
 		this.submittedDate = submittedDate;
 		this.reasonForRejection = reasonForRejection;
 		this.status = status;
+		
 	}
 
 	
 	
 	public PurchaseRequest() {
 		super();
+		}
+
+	public int getUserID() {
+		return user.getId();
 	}
-
-
 
 	public int getID() {
 		return id;
 	}
+	
 
 	public void setID(int iD) {
 		id = iD;

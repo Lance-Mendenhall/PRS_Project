@@ -38,7 +38,6 @@ public class Vendor {
 	}
 
 
-
 	public Vendor() {
 		super();
 	}
