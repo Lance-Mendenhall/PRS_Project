@@ -37,6 +37,7 @@ import { PrliListComponent } from './prli/prli-list/prli-list.component';
 import { PrliDetailComponent } from './prli/prli-detail/prli-detail.component';
 import { PrliCreateComponent } from './prli/prli-create/prli-create.component';
 import { PrliEditComponent } from './prli/prli-edit/prli-edit.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { PrliEditComponent } from './prli/prli-edit/prli-edit.component';
     PrliListComponent,
     PrliDetailComponent,
     PrliCreateComponent,
-    PrliEditComponent
+    PrliEditComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,

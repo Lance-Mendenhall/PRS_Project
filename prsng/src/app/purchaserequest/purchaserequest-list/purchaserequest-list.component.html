@@ -20,14 +20,14 @@
 <tbody>
   <tr *ngFor='let purchaserequest of purchaserequests | sortPurchaserequests'>
     <td> {{ purchaserequest.id }}</td>
-    <td> {{ purchaserequest.user.name }}</td>
-    <td>{{ purchaserequest.DateNeeded }} </td>
-    <td>{{ purchaserequest.DeliveryMode }}</td>
+    <td> {{ purchaserequest.user.userName }}</td>
+    <td>{{ purchaserequest.dateNeeded }} </td>
+    <td>{{ purchaserequest.deliveryMode }}</td>
     <td>{{ purchaserequest.total }}</td>
     <td>{{ purchaserequest.submittedDate }}</td>
     <td>{{ purchaserequest.status }}</td>
     <td>{{ purchaserequest.reasonForRejection }}</td>
-     
+      
     <td>
       <a routerLink='/purchaserequests/detail/{{purchaserequest.id}}'>Detail</a>
       | <a routerLink='/purchaserequests/edit/{{purchaserequest.id}}'>Edit</a>

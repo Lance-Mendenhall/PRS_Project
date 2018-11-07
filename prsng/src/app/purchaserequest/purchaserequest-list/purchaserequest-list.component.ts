@@ -16,7 +16,7 @@ export class PurchaserequestListComponent implements OnInit {
   ngOnInit() {
     this.purchaserequestsvc.list()
       .subscribe(resp=> {
-        console.log("Products:",resp.data);
+        console.log("Purchase Requests:",resp.data);
         this.purchaserequests = resp.data;
       });
   }

@@ -1,16 +1,14 @@
 <div class="component">
   <div>
-    <span class="page-title">Purchase Request Create</span>
+    <span class="page-title">Edit Purchase Request</span>
   </div>
-
- 
 
 <div class="container form" *ngIf="purchaserequest">
 
 <div class="form-group row">
     <label class="col-form-label col-sm-8">Submitted by:</label>
     <div class="col-sm-8">
-      <input [(ngModel)]="purchaserequest.product.name" class="form-control" type="text" name="user"
+      <input [(ngModel)]="purchaserequest.user.userName" class="form-control" type="text" name="user"
         #user="ngModel">
     </div>
     <div *ngIf="user.invalid && user.touched" class="col-form-label col-sm-2 text-danger">
@@ -20,7 +18,7 @@
   <div class="form-group row">
       <label class="col-form-label col-sm-2">Date needed:</label>
       <div class="col-sm-8">
-        <input [(ngModel)]="purchaserequest.DateNeeded" class="form-control" type="text" name="DateNeeded"
+        <input [(ngModel)]="purchaserequest.dateNeeded" class="form-control" type="text" name="DateNeeded"
           #DateNeeded="ngModel" required minlength="8">
       </div>
       <div *ngIf="DateNeeded.invalid && DateNeeded.touched" class="col-form-label col-sm-2 text-danger">
@@ -40,7 +38,7 @@
       <div class="form-group row">
           <label class="col-form-label col-sm-2">Delivery mode:</label>
           <div class="col-sm-8">
-            <input [(ngModel)]="purchaserequest.DeliveryMode" class="form-control" type="text" name="DeliveryMode"
+            <input [(ngModel)]="purchaserequest.deliveryMode" class="form-control" type="text" name="DeliveryMode"
               #DeliveryMode="ngModel" required minlength="0">
           </div>
           <div *ngIf="DeliveryMode.invalid && DeliveryMode.touched" class="col-form-label col-sm-2 text-danger">
@@ -48,15 +46,7 @@
         </div>
 
 
-    <div class="form-group row">
-      <label class="col-form-label col-sm-2">Sumbitted by:</label>
-      <div class="col-sm-8">
-        <select [(ngModel)]="purchaserequest.userID" class="form-control" name="UserId">
-          <option *ngFor="let user of users" [ngValue]="user.id">{{ user.name }}</option>
-        </select>
-      </div>
-    </div>
-
+  
     <div class="form-group row">
       <label class="col-form-label col-sm-2">Total cost:</label>
       <div class="col-sm-8">
@@ -86,11 +76,10 @@
       <div *ngIf="reasonForRejection.invalid && reasonForRejection.touched" class="col-form-label col-sm-2 text-danger">
       </div>
     </div>
- 
-        <!-- <div>
-          <button class="btn btn-primary" (click)="save()">Destroy Jupiter!</button>
-        </div> -->
 
+    <div>
+      <button class="btn btn-primary" (click)="save()">Save</button>
+    </div>
 
 </div>
 </div> 

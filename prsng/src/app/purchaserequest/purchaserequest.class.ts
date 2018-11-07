@@ -9,6 +9,7 @@ export class Purchaserequest {
     reasonforrejection: string;
     status: string;
     datesubmitted: string;
+    dateneeded: string;
    // userid?
 
 
@@ -19,6 +20,7 @@ constructor() {
     this.datesubmitted=(new Date()).toLocaleDateString();
     this.status="New";
     this.reasonforrejection = " ";
+    this.datesubmitted=(new Date()).toLocaleDateString();
     }
 }
 
